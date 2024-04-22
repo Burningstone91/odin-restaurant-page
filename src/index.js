@@ -10,6 +10,9 @@ for (let button of Array.from(navButtons)) {
   button.addEventListener("click", (e) => {
     const activeTab = e.target.textContent;
 
+    /* Clear content divider, will delete all child elements */
+    content.textContent = "";
+
     switch (activeTab) {
       case "Home":
         renderHomePage(content);
