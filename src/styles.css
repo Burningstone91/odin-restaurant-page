@@ -1,0 +1,39 @@
+:root {
+  --background-dark: rgba(0, 0, 0, 0.815);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header > h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: var(--background-dark);
+  height: 60px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background: var(--background-dark);
+  height: 40px;
+}
+
+nav > button {
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  border: none;
+  background: none;
+  width: 90px;
+  cursor: pointer;
+}
+
+nav > button:hover {
+  transform: translateY(-10%);
+}
