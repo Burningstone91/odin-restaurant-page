@@ -1,10 +1,16 @@
 function renderMenuPage(contentDiv) {
+  const page = document.createElement("div");
   const title = document.createElement("h1");
+  const menus = document.createElement("div");
+
+  page.classList.add("menu-page");
+
   title.textContent = "Menu";
+  page.appendChild(title);
 
-  contentDiv.appendChild(title);
+  menus.classList.add("menus");
 
-  contentDiv.appendChild(
+  menus.appendChild(
     createMenu(
       "Margherita",
       "Pizzadough, tomato sauce, mozzarella, basile",
@@ -12,7 +18,7 @@ function renderMenuPage(contentDiv) {
     ),
   );
 
-  contentDiv.appendChild(
+  menus.appendChild(
     createMenu(
       "Pizza Salame",
       "Pizzadough, tomato sauce, mozzarella, salame, basile",
@@ -20,13 +26,17 @@ function renderMenuPage(contentDiv) {
     ),
   );
 
-  contentDiv.appendChild(
+  menus.appendChild(
     createMenu(
       "Pizza ai Funghi",
       "Pizzadough, tomato sauce, mozzarella, mushrooms, olives, basile",
       "https://cdn.pixabay.com/photo/2014/07/08/12/34/pizza-386717_1280.jpg",
     ),
   );
+
+  page.appendChild(menus);
+
+  contentDiv.appendChild(page);
 }
 
 function createMenu(name, desc, imgLink) {

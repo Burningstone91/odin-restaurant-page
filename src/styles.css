@@ -1,5 +1,5 @@
 :root {
-  --background-dark: rgba(0, 0, 0, 0.815);
+  --background-dark: rgba(0, 0, 0, 0.5);
 }
 
 * {
@@ -47,7 +47,8 @@ nav > button:hover {
 }
 
 .about,
-.contact {
+.contact,
+.menu-page {
   padding: 16px;
   margin: 16px;
   background: var(--background-dark);
@@ -59,7 +60,8 @@ nav > button:hover {
   height: auto;
 }
 
-.contact > h1 {
+.contact > h1,
+.menu > h1 {
   color: white;
 }
 
@@ -69,7 +71,32 @@ nav > button:hover {
 }
 
 .about > p,
-.contact > p {
+.contact > p,
+.menu > p {
   margin-top: 16px;
   color: white;
+}
+
+.menu-page > h1 {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.menus {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 16px;
+}
+
+.menu {
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.menu > img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 16px;
 }
