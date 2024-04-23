@@ -11,6 +11,7 @@
 html {
   background-image: url("https://cdn.pixabay.com/photo/2023/10/16/15/23/pizza-8319463_960_720.jpg");
   background-size: auto;
+  background-repeat: no-repeat;
 }
 
 header {
@@ -45,12 +46,14 @@ nav > button:hover {
   transform: translateY(-10%);
 }
 
+.about,
 .contact {
   padding: 16px;
   margin: 16px;
   background: var(--background-dark);
 }
 
+.about >img,
 .contact > img {
   width: 100%;
   height: auto;
@@ -60,6 +63,12 @@ nav > button:hover {
   color: white;
 }
 
+.about > h1 {
+  margin-top: 16px;
+  color: white;
+}
+
+.about > p,
 .contact > p {
   margin-top: 16px;
   color: white;
