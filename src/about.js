@@ -1,10 +1,10 @@
-function renderAboutPage(contentDiv) {
+function renderHomePage(contentDiv) {
   const page = document.createElement("div");
   const image = document.createElement("img");
   const title = document.createElement("h1");
   const text = document.createElement("p");
 
-  page.classList.add("about");
+  page.classList.add("home");
   image.src =
     "https://cdn.pixabay.com/photo/2020/06/28/14/09/dough-5349412_1280.jpg";
   title.textContent = "Our Story";
@@ -18,4 +18,4 @@ function renderAboutPage(contentDiv) {
   contentDiv.appendChild(page);
 }
 
-export { renderAboutPage };
+export { renderHomePage };

@@ -1,9 +1,8 @@
 import "./styles.css";
 
-import { renderHomePage } from "./home";
+import { renderHomePage } from "./about";
 import { renderMenuPage } from "./menu";
 import { renderContactPage } from "./contact";
-import { renderAboutPage } from "./about";
 
 const navButtons = document.querySelectorAll("nav > button");
 const content = document.querySelector("#content");
@@ -24,9 +23,6 @@ for (let button of Array.from(navButtons)) {
         break;
       case "Contact":
         renderContactPage(content);
-        break;
-      case "About":
-        renderAboutPage(content);
         break;
       default:
         break;

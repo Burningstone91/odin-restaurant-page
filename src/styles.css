@@ -46,7 +46,7 @@ nav > button:hover {
   transform: translateY(-10%);
 }
 
-.about,
+.home,
 .contact,
 .menu-page {
   padding: 16px;
@@ -54,7 +54,7 @@ nav > button:hover {
   background: var(--background-dark);
 }
 
-.about >img,
+.home >img,
 .contact > img {
   width: 100%;
   height: auto;
@@ -65,12 +65,12 @@ nav > button:hover {
   color: white;
 }
 
-.about > h1 {
+.home > h1 {
   margin-top: 16px;
   color: white;
 }
 
-.about > p,
+.home > p,
 .contact > p,
 .menu > p {
   margin-top: 16px;
