@@ -8,20 +8,27 @@
   box-sizing: border-box;
 }
 
+html {
+  background-image: url("https://cdn.pixabay.com/photo/2023/10/16/15/23/pizza-8319463_960_720.jpg");
+  background-size: auto;
+}
+
+header {
+  background: var(--background-dark);
+}
+
 header > h1 {
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
-  background: var(--background-dark);
   height: 60px;
 }
 
 nav {
   display: flex;
   justify-content: center;
-  background: var(--background-dark);
-  height: 40px;
+  height: 50px;
 }
 
 nav > button {
@@ -36,4 +43,24 @@ nav > button {
 
 nav > button:hover {
   transform: translateY(-10%);
+}
+
+.contact {
+  padding: 16px;
+  margin: 16px;
+  background: var(--background-dark);
+}
+
+.contact > img {
+  width: 100%;
+  height: auto;
+}
+
+.contact > h1 {
+  color: white;
+}
+
+.contact > p {
+  margin-top: 16px;
+  color: white;
 }
