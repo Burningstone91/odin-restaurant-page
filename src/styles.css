@@ -8,10 +8,11 @@
   box-sizing: border-box;
 }
 
-html {
+body {
   background-image: url("https://cdn.pixabay.com/photo/2023/10/16/15/23/pizza-8319463_960_720.jpg");
-  background-size: auto;
-  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
 }
 
 header {
@@ -86,13 +87,14 @@ nav > button:hover {
 
 .menus {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
   gap: 16px;
 }
 
 .menu {
   padding: 16px;
   background: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
 }
 
 .menu > img {
