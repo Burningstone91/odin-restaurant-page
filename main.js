@@ -27,10 +27,11 @@ ___CSS_LOADER_EXPORT___.push([module.id, `:root {
   box-sizing: border-box;
 }
 
-html {
+body {
   background-image: url("https://cdn.pixabay.com/photo/2023/10/16/15/23/pizza-8319463_960_720.jpg");
-  background-size: auto;
-  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
 }
 
 header {
@@ -105,20 +106,21 @@ nav > button:hover {
 
 .menus {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
   gap: 16px;
 }
 
 .menu {
   padding: 16px;
   background: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
 }
 
 .menu > img {
   width: 100%;
   height: auto;
   margin-bottom: 16px;
-}`, "",{"version":3,"sources":["webpack://./src/styles.css"],"names":[],"mappings":"AAAA;EACE,qCAAqC;AACvC;;AAEA;EACE,SAAS;EACT,UAAU;EACV,sBAAsB;AACxB;;AAEA;EACE,iGAAiG;EACjG,qBAAqB;EACrB,4BAA4B;AAC9B;;AAEA;EACE,kCAAkC;AACpC;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,uBAAuB;EACvB,YAAY;EACZ,YAAY;AACd;;AAEA;EACE,aAAa;EACb,uBAAuB;EACvB,YAAY;AACd;;AAEA;EACE,eAAe;EACf,iBAAiB;EACjB,YAAY;EACZ,YAAY;EACZ,gBAAgB;EAChB,WAAW;EACX,eAAe;AACjB;;AAEA;EACE,2BAA2B;AAC7B;;AAEA;;;EAGE,aAAa;EACb,YAAY;EACZ,kCAAkC;AACpC;;AAEA;;EAEE,WAAW;EACX,YAAY;AACd;;AAEA;;EAEE,YAAY;AACd;;AAEA;EACE,gBAAgB;EAChB,YAAY;AACd;;AAEA;;;EAGE,gBAAgB;EAChB,YAAY;AACd;;AAEA;EACE,YAAY;EACZ,eAAe;EACf,kBAAkB;EAClB,mBAAmB;AACrB;;AAEA;EACE,aAAa;EACb,2DAA2D;EAC3D,SAAS;AACX;;AAEA;EACE,aAAa;EACb,8BAA8B;AAChC;;AAEA;EACE,WAAW;EACX,YAAY;EACZ,mBAAmB;AACrB","sourcesContent":[":root {\n  --background-dark: rgba(0, 0, 0, 0.5);\n}\n\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\nhtml {\n  background-image: url(\"https://cdn.pixabay.com/photo/2023/10/16/15/23/pizza-8319463_960_720.jpg\");\n  background-size: auto;\n  background-repeat: no-repeat;\n}\n\nheader {\n  background: var(--background-dark);\n}\n\nheader > h1 {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  color: white;\n  height: 60px;\n}\n\nnav {\n  display: flex;\n  justify-content: center;\n  height: 50px;\n}\n\nnav > button {\n  font-size: 1rem;\n  font-weight: bold;\n  color: white;\n  border: none;\n  background: none;\n  width: 90px;\n  cursor: pointer;\n}\n\nnav > button:hover {\n  transform: translateY(-10%);\n}\n\n.home,\n.contact,\n.menu-page {\n  padding: 16px;\n  margin: 16px;\n  background: var(--background-dark);\n}\n\n.home >img,\n.contact > img {\n  width: 100%;\n  height: auto;\n}\n\n.contact > h1,\n.menu > h1 {\n  color: white;\n}\n\n.home > h1 {\n  margin-top: 16px;\n  color: white;\n}\n\n.home > p,\n.contact > p,\n.menu > p {\n  margin-top: 16px;\n  color: white;\n}\n\n.menu-page > h1 {\n  color: white;\n  font-size: 3rem;\n  text-align: center;\n  margin-bottom: 32px;\n}\n\n.menus {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));\n  gap: 16px;\n}\n\n.menu {\n  padding: 16px;\n  background: rgba(0, 0, 0, 0.8);\n}\n\n.menu > img {\n  width: 100%;\n  height: auto;\n  margin-bottom: 16px;\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/styles.css"],"names":[],"mappings":"AAAA;EACE,qCAAqC;AACvC;;AAEA;EACE,SAAS;EACT,UAAU;EACV,sBAAsB;AACxB;;AAEA;EACE,iGAAiG;EACjG,sBAAsB;EACtB,4BAA4B;EAC5B,YAAY;AACd;;AAEA;EACE,kCAAkC;AACpC;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,uBAAuB;EACvB,YAAY;EACZ,YAAY;AACd;;AAEA;EACE,aAAa;EACb,uBAAuB;EACvB,YAAY;AACd;;AAEA;EACE,eAAe;EACf,iBAAiB;EACjB,YAAY;EACZ,YAAY;EACZ,gBAAgB;EAChB,WAAW;EACX,eAAe;AACjB;;AAEA;EACE,2BAA2B;AAC7B;;AAEA;;;EAGE,aAAa;EACb,YAAY;EACZ,kCAAkC;AACpC;;AAEA;;EAEE,WAAW;EACX,YAAY;AACd;;AAEA;;EAEE,YAAY;AACd;;AAEA;EACE,gBAAgB;EAChB,YAAY;AACd;;AAEA;;;EAGE,gBAAgB;EAChB,YAAY;AACd;;AAEA;EACE,YAAY;EACZ,eAAe;EACf,kBAAkB;EAClB,mBAAmB;AACrB;;AAEA;EACE,aAAa;EACb,sEAAsE;EACtE,SAAS;AACX;;AAEA;EACE,aAAa;EACb,8BAA8B;EAC9B,eAAe;AACjB;;AAEA;EACE,WAAW;EACX,YAAY;EACZ,mBAAmB;AACrB","sourcesContent":[":root {\n  --background-dark: rgba(0, 0, 0, 0.5);\n}\n\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\nbody {\n  background-image: url(\"https://cdn.pixabay.com/photo/2023/10/16/15/23/pizza-8319463_960_720.jpg\");\n  background-size: cover;\n  background-attachment: fixed;\n  height: 100%;\n}\n\nheader {\n  background: var(--background-dark);\n}\n\nheader > h1 {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  color: white;\n  height: 60px;\n}\n\nnav {\n  display: flex;\n  justify-content: center;\n  height: 50px;\n}\n\nnav > button {\n  font-size: 1rem;\n  font-weight: bold;\n  color: white;\n  border: none;\n  background: none;\n  width: 90px;\n  cursor: pointer;\n}\n\nnav > button:hover {\n  transform: translateY(-10%);\n}\n\n.home,\n.contact,\n.menu-page {\n  padding: 16px;\n  margin: 16px;\n  background: var(--background-dark);\n}\n\n.home >img,\n.contact > img {\n  width: 100%;\n  height: auto;\n}\n\n.contact > h1,\n.menu > h1 {\n  color: white;\n}\n\n.home > h1 {\n  margin-top: 16px;\n  color: white;\n}\n\n.home > p,\n.contact > p,\n.menu > p {\n  margin-top: 16px;\n  color: white;\n}\n\n.menu-page > h1 {\n  color: white;\n  font-size: 3rem;\n  text-align: center;\n  margin-bottom: 32px;\n}\n\n.menus {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));\n  gap: 16px;\n}\n\n.menu {\n  padding: 16px;\n  background: rgba(0, 0, 0, 0.8);\n  cursor: pointer;\n}\n\n.menu > img {\n  width: 100%;\n  height: auto;\n  margin-bottom: 16px;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -609,7 +611,7 @@ function renderHomePage(contentDiv) {
 
   page.classList.add("home");
   image.src =
-    "https://cdn.pixabay.com/photo/2020/06/28/14/09/dough-5349412_1280.jpg";
+    "https://cdn.pixabay.com/photo/2020/06/28/14/09/pizza-5349414_1280.jpg";
   title.textContent = "Our Story";
   text.innerHTML =
     "Nestled in the heart of a bustling city, Burni’s Diner is more than just a pizzeria—it’s a slice of culinary heaven crafted by Antonio Burni, a passionate pizza aficionado. Inspired by his grandmother’s kitchen in Naples, Antonio set out to create a place where every bite would transport patrons to Italy’s cobblestone streets. <br><br> With the aroma of freshly baked pizza dough and simmering marinara sauce drawing in hungry customers, Burni’s became a beloved fixture in the community. Families gathered around checkered tablecloths, friends toasted over glasses of Chianti, and couples savored romantic evenings by candlelight. <br><br> But Burni’s Diner isn’t just about delicious food; it’s about giving back. Through fundraisers for local charities and donations to those in need, Antonio and his team spread the spirit of generosity. <br><br>Come join us at Burni’s, where every slice tells a story, and every bite is a taste of amore.";
